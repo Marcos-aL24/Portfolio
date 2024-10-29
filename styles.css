@@ -1,0 +1,273 @@
+
+.profile-photo  img{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%; /* Para hacerla circular */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
+    position: absolute;
+    bottom: -66px;
+    left: 1rem;
+    background-color: #fff;
+}
+:root {
+    --x-black: #000000;
+    --x-dark: #15202B;
+    --x-gray: #657786;
+    --x-light: #AAB8C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--x-black);
+    color: white;
+    display: grid;
+    grid-template-columns: 275px 600px 350px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.sidebar {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: var(--x-black);
+}
+
+.sidebar-right {
+    border-left: 1px solid #2f3336;
+    padding: 1rem;
+    background-color: var(--x-black);
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 25px;
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #181818;
+}
+
+.x-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.profile-header {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.cover-photo {
+    height: 200px;
+    background: linear-gradient(45deg, var(--twitter-blue), #4a90e2);
+    border-radius: 15px;
+}
+
+
+.profile-info {
+    margin-top: 70px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-handle {
+    color: var(--twitter-gray);
+    margin-bottom: 1rem;
+}
+
+.profile-bio {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 2rem;
+    color: var(--twitter-gray);
+    margin-bottom: 2rem;
+}
+
+.tweet {
+    border-bottom: 1px solid #38444d;
+    padding: 1rem 0;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card {
+    background: #16181c;
+    border: 1px solid #2f3336;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.project-card.visible {
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(29, 161, 242, 0.2);
+}
+
+.project-title {
+    color: var(--twitter-blue);
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    color: var(--twitter-light);
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project-link {
+    color: var(--twitter-blue);
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.skill-tag {
+    background: rgba(29, 161, 242, 0.1);
+    color: var(--twitter-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.skill-tag:hover {
+    background: rgba(29, 161, 242, 0.2);
+}
+
+.skill-tag.active {
+    background: rgba(29, 161, 242, 0.4);
+}
+
+.trending-section {
+    background: #16181c;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trending-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.trending-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #2f3336;
+}
+
+.trending-topic {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.trending-count {
+    color: var(--x-gray);
+    font-size: 0.9rem;
+}
+
+.who-to-follow {
+    background: #16181c;
+    border-radius: 16px;
+    padding: 1rem;
+}
+.project-likes {
+    margin-top: 0;
+}
+
+.like-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.like-button:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: #f91880;
+}
+
+.like-button.liked {
+    color: #f91880;
+}
+
+.like-button.liked .heart {
+    content: "♥";
+}
+
+.heart {
+    transition: transform 0.2s;
+}
+
+.like-button:hover .heart {
+    transform: scale(1.2);
+}
